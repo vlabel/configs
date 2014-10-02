@@ -7,6 +7,7 @@ filetype plugin on
 filetype plugin indent on
 
 
+set colorcolumn=80
 " Плагины Vundle
 
 "=====================================================
@@ -21,12 +22,18 @@ Plugin 'gmarik/Vundle.vim'      " let Vundle manage Vundle, required
 "---------=== Code/project navigation ===-------------
 Plugin 'scrooloose/nerdtree'           " Project and file navigation
 Plugin 'majutsushi/tagbar'             " Class/module browser
-"
+Plugin 'scrooloose/nerdcommenter'
+"" colorscemes
+Plugin 'tomasr/molokai'
+Plugin 'flazz/vim-colorschemes'
 ""------------------=== Other ===----------------------
 Plugin 'bling/vim-airline'              " Lean & mean status/tabline for vim
 Plugin 'fisadev/FixedTaskList.vim'      " Pending tasks list
 Plugin 'rosenfeld/conque-term'          " Consoles as buffers
 Plugin 'tpope/vim-surround'     " Parentheses, brackets, quotes, XML tags, and more
+"" python modeld
+Plugin 'klen/python-mode'
+Plugin 'davidhalter/jedi-vim'
 call vundle#end()
 "--------------=== Snippets support ===---------------
 "Plugin 'garbas/vim-snipmate'       " Snippets manager
